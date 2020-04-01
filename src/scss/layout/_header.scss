@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+
+    &__official {
+        font-size: 12px;        
+
+        p:last-child {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__contacts {
+        text-align: center;
+        
+        a {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 10px 20px;  
+            font-size: 12px;          
+        }
+    }
+}

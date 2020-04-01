@@ -1,6 +1,7 @@
 /*------Сброс стилей браузера------
 --------!- v-1 19.03.2020 -!------*/
 
+
 * {
 	box-sizing: border-box;	
 	line-height: 1;
@@ -33,4 +34,9 @@ ul {
 img {
 	display: block;
 	max-width: 100%;
+}
+
+button {
+	border: none;
+	line-height: 1;
 }
