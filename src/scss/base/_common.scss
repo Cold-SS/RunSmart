@@ -8,4 +8,27 @@
     background-color: $red;
     text-transform: uppercase;
     border-radius: 5px;
+
+    &_header {
+        margin-top: 8px;
+        padding: 10px 20px;  
+        font-size: 12px;
+    }
+
+    &_main {
+        margin-top: 67px;
+        padding: 18px 43px;
+        font-size: 16px;
+    }
+
+    &_submit {
+        flex: 0 0 50px;
+    }
+}
+
+.section-header {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
 }

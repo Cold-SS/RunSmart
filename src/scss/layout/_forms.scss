@@ -1,0 +1,21 @@
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 36px;
+
+    input {
+        flex: 0 0 50px;
+        margin-bottom: 15px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        color: $greyish-brown-two;
+        border-radius: 5px;
+        border: none;
+
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }    
+}

@@ -1,0 +1,18 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    color: $white;
+    line-height: normal;
+    background: url(../../img/bg/help-form-bg.jpg) center center / cover no-repeat;
+
+    &__header {
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;        
+    }
+
+    &__description {
+        margin-top: 74px;
+        font-size: 20px;        
+    }
+}

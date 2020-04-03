@@ -1,0 +1,36 @@
+.advantages {
+    padding: 70px 0 78px 0;
+    background-color: $white-two;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+    }
+
+    &__card {
+        flex: 0 1 235px;        
+        text-align: center;        
+
+        img {
+            display: inline;
+        }
+
+        h3 {
+            margin-top: 38px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 26px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+
+            span {
+                color: $red-two;
+            }
+        }
+    }
+}

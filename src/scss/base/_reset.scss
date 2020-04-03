@@ -4,6 +4,9 @@
 
 * {
 	box-sizing: border-box;	
+}
+
+*::first-line {
 	line-height: 1;
 }
 
@@ -38,5 +41,6 @@ img {
 
 button {
 	border: none;
-	line-height: 1;
+	padding-inline-start: 0;
+	padding-inline-end: 0;
 }
