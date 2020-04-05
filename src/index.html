@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Run Smart</title>
+	<link rel="stylesheet" href="css/tiny-slider.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-	<div class="promo">
+	<section class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -46,10 +47,10 @@
 				<p class="promo__link">или <a href="#">перейти в каталог</a></p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="advantages">
-		<section class="container">
+	<section class="advantages">
+		<div class="container">
 			<h2 class="section-header">НАШИ ПРЕИМУЩЕСТВА</h2>
 			<div class="advantages__wrapper">
 				<div class="advantages__card">
@@ -68,10 +69,10 @@
 					<p>Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span></p>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 
-	<div class="consultation">
+	<section class="consultation">
 		<div class="container">
 			<h2 class="consultation__header">Получите бесплатную консультацию <br>
 			по подбору пульсометра </h2>
@@ -84,7 +85,31 @@
 				<button class="button button_submit">заказать консультацию</button>
 			</form>
 		</div>		
-	</div>
+	</section>
+
+	<section class="carousel">
+		<div class="carousel__inside-wrapper">
+			<button class="carousel__prev-btn">
+				<img src="./img/icn/left-arrow-icn.png" alt="Previous">
+			</button>
+			<button class="carousel__next-btn">
+				<img src="./img/icn/right-arrow-icn.png" alt="Next">
+			</button>
+			<div class="carousel__slider">
+				<div><img src="img/corusel-1.jpg" alt="slide"></div>
+				<div><img src="img/corusel-2.jpg" alt="slide"></div>
+				<div><img src="img/corusel-3.jpg" alt="slide"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="catalog">
+		<div class="container">
+			<h2 class="section-header">Каталог пульсометров</h2>
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 

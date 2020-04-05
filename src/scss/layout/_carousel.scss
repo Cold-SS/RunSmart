@@ -1,0 +1,24 @@
+.carousel {    
+    padding: 108px 0 48px 0;
+
+    &__inside-wrapper {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }  
+
+    &__prev-btn {
+        left: -95px;
+    }
+
+    &__next-btn {
+        right: -95px;
+    }
+
+    button {
+        position: absolute;
+        top: 38.6%;
+        // transform: translateY(-50%);        
+    }
+}
+
