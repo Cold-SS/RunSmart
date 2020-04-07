@@ -1,3 +1,161 @@
 .catalog {
     padding-bottom: 100px;
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;                      
+    }
+
+    &__tab {        
+        height: 50px;
+        flex: 0 1 220px;
+        margin: 0 5px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 48px;   
+        text-transform: uppercase; 
+        color: $brownish-grey;   
+        border: 2px solid $pinkish-grey;
+        transform: skewX(-25deg); 
+        cursor: pointer;  
+        transition: 0.3s all;    
+
+        div {
+            transform: skewX(25deg);
+        }
+
+        &_active {
+            color: $white;
+            background-color: $red;
+            border-color: $red;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 3px 3px 15px $black;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;        
+        margin-top: 60px;
+    }
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;    
+    flex: 0 1 300px;   
+    padding: 20px 20px 26px 20px;
+    text-align: center;
+    border: 2px solid $white-three;
+
+    &__description {
+        img {
+            margin: 0 auto;
+        }
+    
+        h3 {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    
+        p {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        &_invisible {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+
+        ul {
+            margin-left: 37px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 300;            
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 15px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0.4em;
+                left: -20px;
+                width: 5px;
+                height: 5px;
+                background-color: $red;
+            }
+        }
+                
+        &_invisible {
+            display: none;
+        }
+    }
+
+    &__link {
+        display: block;
+        margin-top: 17px;
+        font-size: 14px;
+        color: $red;
+        text-decoration: underline;
+        text-transform: uppercase;        
+
+        @media (hover: hover) {
+            &:hover, {
+                color: $red;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 19px;
+        padding-top: 21px;
+        border-top: 1px solid $white-three;
+    }
+
+    &__price {
+
+        p:first-child {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 300;
+            color: $greyish-brown;
+            text-decoration: line-through;
+            text-align: left;
+        }
+
+        p:last-child {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+        }        
+    }
+
+    &:nth-of-type(3n-1) {
+        margin: 0 20px;
+    }
+
+    &:nth-of-type(n+4) {
+        margin-top: 20px;
+    }
 }

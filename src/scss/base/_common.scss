@@ -8,6 +8,7 @@
     background-color: $red;
     text-transform: uppercase;
     border-radius: 5px;
+    cursor: pointer;
 
     &_header {
         margin-top: 8px;
@@ -23,6 +24,10 @@
 
     &_submit {
         flex: 0 0 50px;
+    }
+
+    &_buy {
+        flex: 0 1 130px;
     }
 }
 

@@ -17,3 +17,4 @@ var slider = tns({
     function () {
         slider.goTo('next');
 });
+
